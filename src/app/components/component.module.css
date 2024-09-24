@@ -1,0 +1,211 @@
+
+.methodSelector {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(48, 48, 48, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #1f1f1f;
+    font-size: 14px;
+    color: #ffffff; /* Ensure text is white */
+    transition: background-color 0.3s;
+}
+
+.dropdown:hover {
+    background-color: #444; 
+}
+
+.dropdown option {
+    background-color: #1f1f1f; 
+    color: #ffffff; 
+}
+
+.dropdown option:hover {
+    background-color: lightgrey; 
+    color: #000; 
+}
+
+
+/* component.module.css */
+
+.transitionsTable {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.transitionsTable h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tableContainer {
+    max-height: 50vh; /* Ajusta el 50% de la altura de la ventana del navegador */
+    overflow-y: auto; /* Permite el desplazamiento vertical */
+    border: 1px solid #555; /* Opcional: agrega un borde al contenedor */
+    border-radius: 8px; /* Opcional: redondea los bordes */
+    position: relative; /* Necesario para el posicionamiento absoluto */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    position: relative; /* Necesario para el posicionamiento absoluto */
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #555;
+}
+
+.table th {
+    background-color: #333;
+    color: #ffffff;
+    font-weight: bold;
+    position: sticky; /* Hace que la cabecera sea "pegajosa" */
+    top: 0; /* Fija la cabecera en la parte superior del contenedor */
+    z-index: 1; /* Asegura que la cabecera esté por encima del contenido */
+}
+
+.table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.table tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.AdditionalInfo{
+    margin-right: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.title {
+    text-align: center;                     
+    font-size: 24px;                     
+    margin-bottom: 10px;                     
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #222;
+    color: #ffffff;
+    font-size: 14px;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+
+.input::placeholder {
+    color: #aaa; /* Color del placeholder */
+}
+
+
+.buttonsubmit {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1d1d1d;
+    border: 1px solid #222222;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.buttonsubmit:hover {
+    background-color: #000000;
+}
+
+
+.message {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #5a5a5a; /* Borde blanco para el mensaje */
+    border-radius: 5px;
+    background-color: #2c2c2c; /* Fondo del mensaje */
+    color: rgb(112, 112, 112); /* Color del texto del mensaje */
+    min-height: 40px; /* Altura mínima para el div */
+    display: flex;
+    align-items: center; /* Centrar verticalmente el texto */
+}
+
+.AdditionalInfo {
+    color: white; /* Texto blanco para resaltar en fondo negro */
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; /* Centrar el título */
+}
+
+.options {
+    display: flex;
+    justify-content: center; /* Centrar los rectángulos */
+    gap: 10px; /* Espacio entre los rectángulos */
+}
+
+.rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 115px; /* Ancho del rectángulo */
+    height: 50px; /* Alto del rectángulo */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white;
+    font-weight: bold; /* Negrita para las etiquetas */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: transform 0.2s; /* Efecto de hover */
+}
+
+.rectangleAccepted {
+    background-color: #28a745; /* Color verde */
+    transform: scale(1.05);
+}
+
+.rectangleRejected {
+    background-color: #dc3545; /* Color rojo */
+    transform: scale(1.05);
+}
+
+.rectangleGray {
+    background-color: #111111; /* Color gris para ambos */
+}
+
+.label {
+    text-align: center; /* Centrar texto de la etiqueta */
+}
+
